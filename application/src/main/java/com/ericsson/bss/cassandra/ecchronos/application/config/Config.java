@@ -264,6 +264,7 @@ public class Config
         private Interval history_lookback;
         private RepairHistory history;
         private Class<? extends AbstractRepairConfigurationProvider> provider = FileBasedRepairConfiguration.class;
+        private boolean enable_twcs_repairs = false;
 
         public RepairLockType getLockType()
         {
@@ -306,6 +307,16 @@ public class Config
             provider.getDeclaredConstructor(ApplicationContext.class);
 
             this.provider = provider;
+        }
+
+        public boolean isTwcsEnabled()
+        {
+            return enable_twcs_repairs;
+        }
+
+        public void setEnable_twcs_repairs(boolean enable_twcs_repairs)
+        {
+            this.enable_twcs_repairs = enable_twcs_repairs;
         }
     }
 

@@ -24,6 +24,7 @@
 * Add TLS support for CQL and JMX - Issue #129
 * Expose Springboot configuration - Issue #149
 * Per table configurations - Issue #119
+* Disable TWCS repairs by default - Issue #151
 
 ### Merged from 1.2
 

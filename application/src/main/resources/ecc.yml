@@ -140,6 +140,11 @@ repair:
   history:
     provider: ecc
     keyspace: ecchronos
+  ##
+  ## Disable repair of TWCS and DTCS tables by default.
+  ## It's possible to override this per table by specifying a schedule for it in schedule.yml.
+  ##
+#  enable_twcs_repairs: false
 
 statistics:
   enabled: true
